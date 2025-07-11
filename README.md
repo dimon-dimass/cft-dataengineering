@@ -39,7 +39,7 @@ pip install -r requirements.txt
 python main.py --start_date --end_date --file_path --conflict_resolve
 --start_date, -sdt      Начальная дата интервала запроса (по умолчанию: 2025-05-16)
 --end_date, -edt      Крайняя дата интервала запроса (по умолчанию: 2025-05-30)
---file_path      Путь для сохранения CSV-файлов (по умолчанию: res/daily.csv, res/hourly.csv)
+--file_path      Путь для сохранения CSV-файлов (по умолчанию: ['res/daily.csv', 'res/hourly.csv'])
 --conflict_resolve      Способ борьбы с дубликатами записей при выгрузке в БД (по умолчанию: 'NOTHING')
                         Варианты:
                         - 'NOTHING' - игнорирование дублирующий по ключу записей,
